@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Game_FX.PetStorePaneController">
+   <top>
+      <AnchorPane prefHeight="64.0" prefWidth="800.0" style="-fx-background-color: #fffacd;"
+                  BorderPane.alignment="CENTER">
+         <Text fill="#cf4cb7" layoutX="198.0" layoutY="45.0" stroke="#ddd5d5" strokeLineCap="ROUND" strokeWidth="0.0"
+               text="Welcome to Pet Store" wrappingWidth="416.30029296875">
+            <font>
+               <Font size="35.0"/>
+            </font>
+         </Text>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                  prefHeight="483.0" prefWidth="101.0" style="-fx-background-color: #fff0f5;"
+                  BorderPane.alignment="CENTER">
+         <fx:define>
+            <Image fx:id="dogImage" requestedHeight="68" requestedWidth="98" url="@../Images/dog.png"/>
+            <Image fx:id="catImage" url="@../Images/cat.png"/>
+            <Image fx:id="pandaImage" url="@../Images/panda.png"/>
+            <Image fx:id="guineaPigImage" url="@../Images/guinea-pig1.png"/>
+            <Image fx:id="alpacaImage" url="@../Images/alpaca.png"/>
+            <Image fx:id="koalaImage" url="@../Images/koala1.png"/>
+            <Image fx:id="homeImage" url="@../Images/home.png"/>
+         </fx:define>
+         <Button fx:id="petStoreButton" layoutX="10.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                 minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="75.0" prefWidth="81.0"
+                 style="-fx-background-color: #eea1cb;" textFill="WHITE" AnchorPane.bottomAnchor="394.0"
+                 AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="14.0">
+            <graphic>
+               <ImageView fitHeight="67.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                  <Image url="@../Images/pet-shop.png"/>
+               </ImageView>
+            </graphic>
+         </Button>
+         <Button fx:id="foodButton" layoutX="13.0" layoutY="103.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                 minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0"
+                 style="-fx-background-color: #eea1cb;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+            <graphic>
+               <ImageView fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                  <Image url="@../Images/groceries.png"/>
+               </ImageView>
+            </graphic>
+         </Button>
+         <Button fx:id="toyStoreButton" layoutX="7.0" layoutY="193.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                 minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0"
+                 style="-fx-background-color: #eea1cb;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+            <graphic>
+               <ImageView fitHeight="57.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                  <Image url="@../Images/toy-shop.png"/>
+               </ImageView>
+            </graphic>
+         </Button>
+         <Button fx:id="nextDayButton" layoutX="15.0" layoutY="281.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                 minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0"
+                 style="-fx-background-color: #eea1cb;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+            <graphic>
+               <ImageView fitHeight="56.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                  <Image url="@../Images/next.png"/>
+               </ImageView>
+            </graphic>
+         </Button>
+         <Button fx:id="actionButton" layoutX="10.0" layoutY="370.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                 minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0"
+                 style="-fx-background-color: #eea1cb;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+            <graphic>
+               <ImageView fitHeight="65.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                  <Image url="@../Images/call-to-action.png"/>
+               </ImageView>
+            </graphic>
+         </Button>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="511.0" prefWidth="698.0" style="-fx-background-color: #e0ffff;"
+                  BorderPane.alignment="CENTER">
+         <Button fx:id="myPetButton1" layoutX="95.0" layoutY="126.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                 minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0"
+                 style="-fx-background-color: #ffffff;" text="Pet1">
+            <graphic>
+               <ImageView fx:id="stockPic1" fitHeight="87.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+                  <Image url="@../Images/dog.png"/>
+               </ImageView>
+            </graphic>
+         </Button>
+         <Button fx:id="myPetButton3" layoutX="455.0" layoutY="126.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                 minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0"
+                 style="-fx-background-color: #ffffff;">
+            <graphic>
+               <ImageView fx:id="stockPic3" fitHeight="83.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                  <Image url="@../Images/koala1.png"/>
+               </ImageView>
+            </graphic>
+         </Button>
+         <Button fx:id="myPetButton2" layoutX="271.0" layoutY="126.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                 minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0"
+                 style="-fx-background-color: #ffffff;" text="Pet2">
+            <graphic>
+               <ImageView fx:id="stockPic2" fitHeight="84.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true">
+                  <Image url="@../Images/cat.png"/>
+               </ImageView>
+            </graphic>
+         </Button>
+         <Label fx:id="welcomeLabel2" layoutX="31.0" layoutY="61.0" prefHeight="42.0" prefWidth="297.0"
+                text="Which one you feel like family?" textFill="#388ae7">
+            <font>
+               <Font size="16.0"/>
+            </font>
+         </Label>
+         <Label fx:id="welcomeLabel1" layoutX="32.0" layoutY="33.0" prefHeight="28.0" prefWidth="295.0"
+                text="Look at these lovely cute pets:" textFill="#388ae7">
+            <font>
+               <Font size="16.0"/>
+            </font>
+         </Label>
+         <Label fx:id="daysToPlayLabel" layoutX="618.0" layoutY="156.0" textFill="#388ae7"/>
+         <Button fx:id="myPetButton11" layoutX="95.0" layoutY="274.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                 minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0"
+                 style="-fx-background-color: #ffffff;" text="Pet1">
+            <graphic>
+               <ImageView fx:id="stockPic4" fitHeight="87.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+                  <Image url="@../Images/panda.png"/>
+               </ImageView>
+            </graphic>
+         </Button>
+         <Button fx:id="myPetButton12" layoutX="455.0" layoutY="274.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                 minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0"
+                 style="-fx-background-color: #ffffff;" text="Pet1">
+            <graphic>
+               <ImageView fx:id="stockPic6" fitHeight="87.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+                  <Image url="@../Images/alpaca.png"/>
+               </ImageView>
+            </graphic>
+         </Button>
+         <Button fx:id="myPetButton13" layoutX="271.0" layoutY="274.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                 minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0"
+                 style="-fx-background-color: #ffffff;" text="Pet1">
+            <graphic>
+               <ImageView fx:id="stockPic5" fitHeight="87.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+                  <Image url="@../Images/guinea-pig1.png"/>
+               </ImageView>
+            </graphic>
+         </Button>
+      </AnchorPane>
+   </right>
+</BorderPane>

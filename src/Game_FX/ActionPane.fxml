@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="496.0" prefWidth="698.0" style="-fx-background-color: #e0ffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Game_FX.ActionController">
+   <children>
+      <Button fx:id="actionButton2" layoutX="256.0" layoutY="338.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#setActionButton" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: #ffffff;">
+         <graphic>
+            <ImageView fx:id="stockPic3" fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/toilet.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="actionButton1" layoutX="141.0" layoutY="337.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#setActionButton" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: #ffffff;">
+         <graphic>
+            <ImageView fx:id="stockPic2" fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/sleep.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="actionButton3" layoutX="369.0" layoutY="338.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#setActionButton" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: #ffffff;">
+         <graphic>
+            <ImageView fx:id="stockPic4" fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/play.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="actionButton5" layoutX="595.0" layoutY="337.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#setActionButton" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: #ffffff;">
+         <graphic>
+            <ImageView fx:id="stockPic6" fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/cage.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="actionButton4" layoutX="484.0" layoutY="338.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#setActionButton" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: #ffffff;">
+         <graphic>
+            <ImageView fx:id="stockPic5" fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/hospital.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="actionButton0" layoutX="32.0" layoutY="337.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#setActionButton" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: #ffffff;">
+         <graphic>
+            <ImageView fx:id="stockPic1" fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/eat.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Text fill="#cf4cb7" layoutX="41.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="What do you want to do for pet ? ? ?" wrappingWidth="417.30029296875">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text fx:id="confirmText" fill="#388ae7" layoutX="41.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="373.30029296875">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Button fx:id="okButton" layoutX="590.0" layoutY="92.0" mnemonicParsing="false" onAction="#setOkButton" style="-fx-background-color: #eea1cb;" text="OK" textFill="WHITE" visible="false" />
+      <Text fx:id="confirmText1" fill="#388ae7" layoutX="41.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="It will cost $50. Press Enter to continue." visible="false" wrappingWidth="373.3003021031618">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Button fx:id="petButton0" defaultButton="true" layoutX="128.0" layoutY="159.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#selectPetButtonHandler" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #ffffff;" text="Pet1">
+         <graphic>
+            <ImageView fx:id="petPic1" fitHeight="87.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/question-mark.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="petButton1" layoutX="285.0" layoutY="159.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#selectPetButtonHandler" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #ffffff;" text="Pet2">
+         <graphic>
+            <ImageView fx:id="petPic2" fitHeight="84.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/question-mark.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="petButton2" layoutX="441.0" layoutY="159.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#selectPetButtonHandler" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #ffffff;">
+         <graphic>
+            <ImageView fx:id="petPic3" fitHeight="83.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/question-mark.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
